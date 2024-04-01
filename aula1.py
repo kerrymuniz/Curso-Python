@@ -1,17 +1,52 @@
 # o sep é um separador dos argumentos
-print(12, 34, sep="-")
+#print(12, 34, sep="-")
 
 # Tipos de dados no python
-
 #string -> tudo o que está dentro de aspas, conjunto de caracteres
-print('Oi!')
+#print('Oi!')
 
 #int -> números inteiros
-print(10)
+#print(10)
 
 #float -> números com casas decimais
-print(15.6)
+#print(15.6)
 
 #boolean -> valores true ou false
-print(10 == 10)
-print(10 == 11)
+#print(10 == 10)
+#print(10 == 11)
+
+
+#Exercício variável
+nome = 'Kerry'
+sobrenome = 'Santos'
+idade = 19
+nasc = '26-03-2005'
+altura = 175
+maior_idade = idade >= 18
+
+
+print("Nome: ", nome)
+print("Sobrenome: ", sobrenome)
+print("Idade: ", idade)
+print("Ano de nascimento: ", nasc)
+print("Altura em CM: ", altura)
+print("É maior de idade? ", maior_idade)
+
+#Operadores aritméticos
+adicao = 1 + 1
+print(adicao)
+
+subtracao = 3 - 2
+print(subtracao)
+
+mult = 4 * 4
+print(mult)
+
+divisao = 6/2
+print(divisao)
+
+exponenciacao = 2 ** 5
+print(exponenciacao)
+
+modulo = 50 % 3
+print(modulo)
