@@ -38,20 +38,14 @@
 
 #Exercício 3 - Função que retorna uma lista de números pares da lista de entrada
 listaNumeros = []
-
+listaPares = []
 for c in range(1, 5):
-	lisNumeros.append(int(input(f"Digite  o {c}º número: ")))
+	listaNumeros.append(int(input(f"Digite  o {c}º número: ")))
     
 def numerosPares(dividendos):
     for num in dividendos:
-        num_pares = num % 2
-        if(num_pares == 0):
-            num_pares = num
-    return num_pares
-
-# def listaEntrada(listaPar):
-#     lista1 = [2, 4, 5, 11, 7, 26, 35]
+        if(num % 2 == 0):
+            listaPares.append(num)
+    print(listaPares)
     
-    
-listaNumeros = [2, 4, 5, 11, 7, 26, 35]
-print(numerosPares(listaNumeros))
+numerosPares(listaNumeros)
