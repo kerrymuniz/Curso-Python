@@ -37,15 +37,36 @@
 
 
 #Exercício 3 - Função que retorna uma lista de números pares da lista de entrada
-listaNumeros = []
-listaPares = []
-for c in range(1, 5):
-	listaNumeros.append(int(input(f"Digite  o {c}º número: ")))
+# listaNumeros = []
+# listaPares = []
+# for c in range(1, 5):
+# 	listaNumeros.append(int(input(f"Digite  o {c}º número: ")))
     
-def numerosPares(dividendos):
-    for num in dividendos:
-        if(num % 2 == 0):
-            listaPares.append(num)
-    print(listaPares)
+# def numerosPares(dividendos):
+#     for num in dividendos:
+#         if(num % 2 == 0):
+#             listaPares.append(num)
+#     print("Os números pares da lista são", listaPares)
     
-numerosPares(listaNumeros)
+# numerosPares(listaNumeros)
+
+
+#Exercício 4 - Interpolação de string % calcular salario do funcionário depois de + 5%
+# nome = "O funcionário Kerry "
+# salario_atual = input("Qual o salário atual? R$")
+# salario_novo = float(salario_atual) + (float(salario_atual) * 5/100)
+
+# print("Novo Ajuste:")
+# variavel = '%s teve um ajuste em seu salário, com aumento de 5%, ficando em método de pagamento mensal %f' % (nome, str(salario_novo))
+# print(variavel)
+
+
+#Exercício 5
+carros_vendidos = input("Informe a quantidade de carros vendidos: ")
+valor_vendas = 40.000 * float(carros_vendidos)
+salario_fixo = 1000
+salario_comissao = float(carros_vendidos) * 50
+salario_acrescimo = valor_vendas + (valor_vendas * 5/100)
+salario_final = salario_fixo + salario_comissao + salario_acrescimo
+
+print(salario_final)
