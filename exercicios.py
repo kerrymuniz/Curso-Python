@@ -61,12 +61,21 @@
 # print(variavel)
 
 
-#Exercício 5
-carros_vendidos = input("Informe a quantidade de carros vendidos: ")
-valor_vendas = 40.000 * float(carros_vendidos)
-salario_fixo = 1000
-salario_comissao = float(carros_vendidos) * 50
-salario_acrescimo = valor_vendas + (valor_vendas * 5/100)
-salario_final = salario_fixo + salario_comissao + salario_acrescimo
+#Exercício 5 - função que recebe duas listas de inteiros e retorne os elementos em comum
+lista_int1 = []
+lista_int2 = []
+def intersecao(lista1, lista2):
+    #recuperando inteiros da 1ª lista
+    for num_lista1 in lista1:
+        if(num_lista1 >= 0):
+            lista_int1.append(num_lista1)
+    #recuperando inteiros da 2ª lista
+    for num_lista2 in lista2:
+        if(num_lista2 >=0):
+            lista_int2.append(num_lista2)
+    print("Primeira lista:", lista_int1)
+    print("Segunda lista:", lista_int2)
 
-print(salario_final)
+lista_A = [2, 5, 7, 18, 34, 56, 114]
+lista_B = [18, 43, 56, 89, 95, 107, 7]
+intersecao(lista_A, lista_B)
