@@ -78,5 +78,6 @@ def intersecao(lista1, lista2):
 
 lista_A = [2, 5, 7, 18, 34, 56, 114]
 lista_B = [18, 43, 56, 89, 95, 107, 7]
+inteirosComuns = [comum for comum in lista_A if comum in lista_B]
 intersecao(lista_A, lista_B)
-print("Os elementos em comum são", set(lista_A) & set(lista_B))
+print("Os elementos em comum são", inteirosComuns)
