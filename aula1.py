@@ -17,36 +17,44 @@
 
 
 #Exercício variável
-nome = 'Kerry'
-sobrenome = 'Santos'
-idade = 19
-nasc = '26-03-2005'
-altura = 175
-maior_idade = idade >= 18
+# nome = 'Kerry'
+# sobrenome = 'Santos'
+# idade = 19
+# nasc = '26-03-2005'
+# altura = 175
+# maior_idade = idade >= 18
 
 
-print("Nome: ", nome)
-print("Sobrenome: ", sobrenome)
-print("Idade: ", idade)
-print("Ano de nascimento: ", nasc)
-print("Altura em CM: ", altura)
-print("É maior de idade? ", maior_idade)
+# print("Nome: ", nome)
+# print("Sobrenome: ", sobrenome)
+# print("Idade: ", idade)
+# print("Ano de nascimento: ", nasc)
+# print("Altura em CM: ", altura)
+# print("É maior de idade? ", maior_idade)
 
 #Operadores aritméticos
-adicao = 1 + 1
-print(adicao)
+# adicao = 1 + 1
+# print(adicao)
 
-subtracao = 3 - 2
-print(subtracao)
+# subtracao = 3 - 2
+# print(subtracao)
 
-mult = 4 * 4
-print(mult)
+# mult = 4 * 4
+# print(mult)
 
-divisao = 6/2
-print(divisao)
+# divisao = 6/2
+# print(divisao)
 
-exponenciacao = 2 ** 5
-print(exponenciacao)
+# exponenciacao = 2 ** 5
+# print(exponenciacao)
 
-modulo = 50 % 3
-print(modulo)
+# modulo = 50 % 3
+# print(modulo)
+
+
+#id dos elementos em python
+elemento1 = 'x'
+elemento2 = 'y'
+
+print(id(elemento1))
+print(id(elemento2))
