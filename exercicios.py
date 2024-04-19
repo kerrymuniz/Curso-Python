@@ -84,20 +84,32 @@
 
 
 #Exercício 6 - exercício para praticar função len e caracteres
-nome = input("\nDigite seu nome : ")
-idade = input("Digite a sua idade: ")
+# nome = input("\nDigite seu nome : ")
+# idade = input("Digite a sua idade: ")
 
-if(nome != "" and idade != ""):
-    print(f"\nSeu nome é {nome} e você tem {idade} anos")
-    print(f"Seu nome invertido é {nome[::-1]}")
+# if(nome != "" and idade != ""):
+#     print(f"\nSeu nome é {nome} e você tem {idade} anos")
+#     print(f"Seu nome invertido é {nome[::-1]}")
     
-    if ' ' in nome:
-        print("Seu nome CONTÉM espaços")
-    else:
-        print("Seu nome NÃO contém espaços")
+#     if ' ' in nome:
+#         print("Seu nome CONTÉM espaços")
+#     else:
+#         print("Seu nome NÃO contém espaços")
 
-    print(f"Seu nome tem {len(nome)} letras")
-    print(f"A primeira letra do seu nome é '{nome[0]}'")
-    print(f"A última letra do seu nome é '{nome[4]}'")
-else:
-    print("Desculpe, você deixou campos vazios.")
+#     print(f"Seu nome tem {len(nome)} letras")
+#     print(f"A primeira letra do seu nome é '{nome[0]}'")
+#     print(f"A última letra do seu nome é '{nome[4]}'")
+# else:
+#     print("Desculpe, você deixou campos vazios.")
+
+
+#Exercício 7 - Try except
+# try:
+#     num1 = input("Digite o 1ª número: ")
+#     num2 = input("Digite o 2ª número: ")
+#     if(num1 != 0 and num2 != 0):
+#         calculo = float(num1)/float(num2)
+#         print(f"Divisão entre os números {num1} e {num2} = {calculo:.2f}")
+
+# except:
+#     print('Não foi possível realizar a operação por 0.')
