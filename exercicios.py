@@ -113,3 +113,48 @@
 
 # except:
 #     print('Não foi possível realizar a operação por 0.')
+
+
+#Exercício 8 - par ou ímpar
+# numero = input("Digite um número inteiro: ")
+# numeroInt = int(numero)
+# par = numeroInt % 2
+# if(numero.isdigit()):
+#     if(par == 0):
+#         print("O número digitado é par.")
+#     else:
+#         print("O número digitado é ímpar.")
+# else:
+#     print("O número digitado não é inteiro.")
+
+
+#Exercício 9 - hora perguntada
+# hora = input("Que horas são : ")
+# horas = int(hora)
+# if(horas >= 0 and horas <= 11):
+#     print("Bom dia!")
+# elif(horas >= 12 and horas <= 17):
+#     print("Boa tarde!")
+# else:
+#     print("Boa noite!")
+
+
+#Exercício 10 - tamanho nome usuário
+# nome = input("Digite seu primeiro nome: ")
+# if(len(nome) <= 4):
+#     print("Seu nome é curto!")
+# elif(len(nome) >= 5 and len(nome) <= 6):
+#     print("Seu nome é normal!")
+# else:
+#     print("Seu nome é muito grande!")
+
+#Exercíco 11 - salário final + comissão sobre total de vendas
+# comissao = 0.05
+# totalVendas = input("Digite o total de vendas realizadas: ")
+# salarioFixo = input("Digite seu salário fixo: R$")
+# calculo = float(salarioFixo) + (float(totalVendas) * comissao)
+# print(f"Seu salário final é de R${calculo}")
+
+
+#Exercício 12 - menu
+
