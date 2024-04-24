@@ -53,8 +53,19 @@
 
 
 #id dos elementos em python
-elemento1 = 'x'
-elemento2 = 'y'
+# elemento1 = 'x'
+# elemento2 = 'y'
 
-print(id(elemento1))
-print(id(elemento2))
+# print(id(elemento1))
+# print(id(elemento2))
+
+
+#Estrutura de repetição
+condicao = True
+while(condicao):
+    nome = input("Qual seu nome: ")
+    
+    if(nome == "sair"):
+        break
+
+print("Acabou")
