@@ -157,10 +157,10 @@
 
 
 #Exercício 12 - while
-nome = 'Kerry Muniz'
-indice = 0
+# nome = 'Kerry Muniz'
+# indice = 0
 
-while(indice < len(nome)):
-    print(nome[indice])
-    indice += 1
+# while(indice < len(nome)):
+#     print(nome[indice])
+#     indice += 1
 
