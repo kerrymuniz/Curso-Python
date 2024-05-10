@@ -164,3 +164,19 @@
 #     print(nome[indice])
 #     indice += 1
 
+
+#Exercício 13 - palavra secreta
+#pseudocódigo
+#1ª solicitar para o usuário digitar uma letra
+#2ª verificar se ele digitou mais de uma letra
+#3ª 
+#4ª
+
+palavra_secreta = 'cadeira'
+while True:
+    letra = input("Digite uma letra: ")
+
+    if len(letra) > 1:
+        print("Digite apenas uma letra.")
+    if letra.isdigit():
+        print("Digite apenas letras.")
