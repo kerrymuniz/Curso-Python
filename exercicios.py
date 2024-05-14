@@ -166,17 +166,35 @@
 
 
 #Exercício 13 - palavra secreta
-#pseudocódigo
-#1ª solicitar para o usuário digitar uma letra
-#2ª verificar se ele digitou mais de uma letra
-#3ª 
-#4ª
+import os
 
 palavra_secreta = 'cadeira'
+letras_acertadas = ''
+tentativas = 0
+
 while True:
     letra = input("Digite uma letra: ")
+    tentativas += 1
 
     if len(letra) > 1:
         print("Digite apenas uma letra.")
     if letra.isdigit():
         print("Digite apenas letras.")
+    
+    if letra in palavra_secreta:
+        letras_acertadas += letra
+
+    palavra_formada = ''
+    for letra_secreta in palavra_secreta:
+        if letra_secreta in letras_acertadas:
+            palavra_formada += letra_secreta
+        else:
+            palavra_formada += '*'
+    print(palavra_formada)
+    if palavra_formada == palavra_secreta:
+        #os.system('clear')
+        print("PARABÉNS, VOCÊ ACERTOU!!")
+        print(f"A PALAVRA CORRETA É {palavra_secreta}")
+        print(f"VOCÊ PRECISOU DE {tentativas} TENTATIVAS PARA ACERTAR!")
+        letras_acertadas = ''
+        tentativas = 0

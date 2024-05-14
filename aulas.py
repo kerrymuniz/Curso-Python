@@ -61,11 +61,11 @@
 
 
 #Estrutura de repetição
-condicao = True
-while(condicao):
-    nome = input("Qual seu nome: ")
+# condicao = True
+# while(condicao):
+#     nome = input("Qual seu nome: ")
     
-    if(nome == "sair"):
-        break
+#     if(nome == "sair"):
+#         break
 
-print("Acabou")
+# print("Acabou")
