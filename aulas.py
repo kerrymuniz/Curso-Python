@@ -69,3 +69,26 @@
 #         break
 
 # print("Acabou")
+
+
+#CRUD - Create, Read, Update, Delete
+    #append - adiciona um item no final
+    #insert - adiciona um item no índice escolhido
+    #pop - remove item do final ou do índice escolhido
+    #del - apaga um índice
+    #clear - limpa a lista
+    #extend - estende a lista
+    #+ - concatena listas
+
+
+#Desempacotamento + tuplas
+nome1, nome2, nome3 = ["cadeira", "lápis", "mesa"] #desempacotando
+print(nome2)
+i1, *_ = ["cadeira", "lápis", "mesa"] #desempacotando + variável que não vai usar
+print(i1)
+
+tupla = "futebol", "basquete", "vôlei" #tupla
+print(tupla[2])
+print(tupla)
+
+
