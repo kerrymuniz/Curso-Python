@@ -212,28 +212,35 @@
 #Exercício 15 - lista de compras
 import os
 
+lista = [] #declaração da lista vazia fora do while
+
 while True:
     
     opcao = input("Selecione uma opção \n [i]nserir [a]pagar [l]istar: ")
-    try:
-        os.system('clear')
-        if opcao == 'i':
-            lista_insert = []
-            valor_digitado = input("Valor: ")
-            lista_insert.append(valor_digitado)
+    
+    if opcao == 'i':
+        os.system('cls')
+        valor_digitado = input("Valor: ")
+        lista.append(valor_digitado)
+    elif opcao == 'a':
+        os.system('cls')
 
-        if opcao == 'a':
-            if len(lista_insert) == 0:
-                print('Não há itens para apagar')
-            else:
-                for indice, item in enumerate(lista_insert):
-                    print(indice, item)
+        indice_str = input("Escolha o índice para apagar: ")
 
-        if opcao == 'l':
-            if len(lista_insert) == 0:
+        try:
+            indice = int(indice_str)
+            del lista[indice]
+        except ValueError:
+            print("Por favor digitar apenas números inteiros.")
+        except IndexError:
+            print("Índice não existente na lista.")
+    elif opcao == 'l':
+        os.system('cls')
+
+        if len(lista) == 0:
                 print('Não há itens na lista')
-            else:
-                for indice, item in enumerate(lista_insert):
-                    print(indice, item)
-    except:
-        ...
+        else:
+            for indice, item in enumerate(lista):
+                print(indice, item)
+    else:
+        print("Por favor, escolha i, a ou l.")
