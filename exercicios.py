@@ -207,3 +207,33 @@
 
 # for i in indices:
 #     print(i, lista[i])
+
+
+#Exercício 15 - lista de compras
+import os
+
+while True:
+    
+    opcao = input("Selecione uma opção \n [i]nserir [a]pagar [l]istar: ")
+    try:
+        os.system('clear')
+        if opcao == 'i':
+            lista_insert = []
+            valor_digitado = input("Valor: ")
+            lista_insert.append(valor_digitado)
+
+        if opcao == 'a':
+            if len(lista_insert) == 0:
+                print('Não há itens para apagar')
+            else:
+                for indice, item in enumerate(lista_insert):
+                    print(indice, item)
+
+        if opcao == 'l':
+            if len(lista_insert) == 0:
+                print('Não há itens na lista')
+            else:
+                for indice, item in enumerate(lista_insert):
+                    print(indice, item)
+    except:
+        ...

@@ -82,13 +82,24 @@
 
 
 #Desempacotamento + tuplas
-nome1, nome2, nome3 = ["cadeira", "lápis", "mesa"] #desempacotando
-print(nome2)
-i1, *_ = ["cadeira", "lápis", "mesa"] #desempacotando + variável que não vai usar
-print(i1)
+# nome1, nome2, nome3 = ["cadeira", "lápis", "mesa"] #desempacotando
+# print(nome2)
+# i1, *_ = ["cadeira", "lápis", "mesa"] #desempacotando + variável que não vai usar
+# print(i1)
 
-tupla = "futebol", "basquete", "vôlei" #tupla
-print(tupla[2])
-print(tupla)
+# tupla = "futebol", "basquete", "vôlei" #tupla
+# print(tupla[2])
+# print(tupla)
+
+
+#método enumerate() - pegar índices
+lista = ['copo', 'prato', 'talher']
+#lista_enumerada = list(enumerate(lista)) #convertendo para lista
+# print(lista_enumerada)
+# for item in lista_enumerada:
+#     print(item)
+    #OU
+for indice, valor in enumerate(lista):
+    print(indice, '-', valor)
 
 
