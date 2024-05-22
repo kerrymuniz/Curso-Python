@@ -210,37 +210,56 @@
 
 
 #Exercício 15 - lista de compras
-import os
+# import os
 
-lista = [] #declaração da lista vazia fora do while
+# lista = [] #declaração da lista vazia fora do while
 
-while True:
+# while True:
     
-    opcao = input("Selecione uma opção \n [i]nserir [a]pagar [l]istar: ")
+#     opcao = input("Selecione uma opção \n [i]nserir [a]pagar [l]istar: ")
     
-    if opcao == 'i':
-        os.system('cls')
-        valor_digitado = input("Valor: ")
-        lista.append(valor_digitado)
-    elif opcao == 'a':
-        os.system('cls')
+#     if opcao == 'i':
+#         os.system('cls')
+#         valor_digitado = input("Valor: ")
+#         lista.append(valor_digitado)
+#     elif opcao == 'a':
+#         os.system('cls')
 
-        indice_str = input("Escolha o índice para apagar: ")
+#         indice_str = input("Escolha o índice para apagar: ")
 
-        try:
-            indice = int(indice_str)
-            del lista[indice]
-        except ValueError:
-            print("Por favor digitar apenas números inteiros.")
-        except IndexError:
-            print("Índice não existente na lista.")
-    elif opcao == 'l':
-        os.system('cls')
+#         try:
+#             indice = int(indice_str)
+#             del lista[indice]
+#         except ValueError:
+#             print("Por favor digitar apenas números inteiros.")
+#         except IndexError:
+#             print("Índice não existente na lista.")
+#     elif opcao == 'l':
+#         os.system('cls')
 
-        if len(lista) == 0:
-                print('Não há itens na lista')
-        else:
-            for indice, item in enumerate(lista):
-                print(indice, item)
-    else:
-        print("Por favor, escolha i, a ou l.")
+#         if len(lista) == 0:
+#                 print('Não há itens na lista')
+#         else:
+#             for indice, item in enumerate(lista):
+#                 print(indice, item)
+#     else:
+#         print("Por favor, escolha i, a ou l.")
+
+
+#Exercício 16 - lista de clientes JSON
+def cadastrar_usuarios():
+    print("""
+          ----------- MENU -----------
+          1 - Cadastrar Cliente (Nome, idade, email)
+          2 - Listar Clientes
+          3 - Excluir Cliente
+          4 - Sair
+          """)
+    opcao = input("Escolha: ")
+    while opcao != '4':
+        if opcao == '1':
+            ...
+        elif opcao == '2':
+            ...
+
+cadastrar_usuarios()
