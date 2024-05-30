@@ -93,13 +93,22 @@
 
 
 #método enumerate() - pegar índices
-lista = ['copo', 'prato', 'talher']
+#lista = ['copo', 'prato', 'talher']
 #lista_enumerada = list(enumerate(lista)) #convertendo para lista
 # print(lista_enumerada)
 # for item in lista_enumerada:
 #     print(item)
     #OU
-for indice, valor in enumerate(lista):
-    print(indice, '-', valor)
+# for indice, valor in enumerate(lista):
+#     print(indice, '-', valor)
+
+#métodos da str - split e join
+#o split separa cada palavra da str em forma de lista
+#o join une as palavras a partir de um separador(- , ; etc.)
+# lista = 'Frase de teste, para str.'
+# listaSplit = lista.split(',')
+# listaJoin = ';'.join(lista)
+# print(listaSplit)
+# print(listaJoin)
 
 
