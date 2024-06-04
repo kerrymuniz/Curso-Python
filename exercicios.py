@@ -246,20 +246,12 @@
 #         print("Por favor, escolha i, a ou l.")
 
 
-#Exercício 16 - lista de clientes JSON
-def cadastrar_usuarios():
-    print("""
-          ----------- MENU -----------
-          1 - Cadastrar Cliente (Nome, idade, email)
-          2 - Listar Clientes
-          3 - Excluir Cliente
-          4 - Sair
-          """)
-    opcao = input("Escolha: ")
-    while opcao != '4':
-        if opcao == '1':
-            ...
-        elif opcao == '2':
-            ...
-
-cadastrar_usuarios()
+#Exercício 16 - gerar primeiro digito de um CPF
+cpf = [7, 8, 3, 5, 4, 2, 1, 7, 0, 1, 9]
+contador = 10
+while True:
+    if contador >= 2:
+        for cadaNum in cpf:
+            cadaNum *= contador
+            print(f"{cadaNum} * {contador} = {cadaNum}")
+            contador -= 1
