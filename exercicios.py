@@ -252,6 +252,6 @@ contador = 10
 while True:
     if contador >= 2:
         for cadaNum in cpf:
+            print(f"{cadaNum} * {contador} = {cadaNum * contador}")
             cadaNum *= contador
-            print(f"{cadaNum} * {contador} = {cadaNum}")
             contador -= 1
