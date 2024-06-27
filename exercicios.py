@@ -247,45 +247,65 @@
 
 
 #Exercício 16 - gerar primeiro e segundo digito de um CPF
-cpf = [7, 4, 6, 8, 2, 4, 8, 9, 0, 7, 0]
-nove_digitos = cpf[:9]
-contador = 10
+# cpf = [7, 4, 6, 8, 2, 4, 8, 9, 0, 7, 0]
+# nove_digitos = cpf[:9]
+# contador = 10
 
-resultado = 0
-for cadaNum in nove_digitos:
-    print(f"{cadaNum} * {contador} = {cadaNum * contador}")
-    resultado += cadaNum * contador
-    contador -= 1
-print("Soma dos resultados:", resultado)
-resultado *= 10
-print("Multiplicação por 10:", resultado)
-resultado %= 11
-print("Resto da divisão do resultado por 11:", resultado)
-if(resultado > 9):
-    resultado = 0
-    print(f"Resultado é {resultado}")
-else:
-    resultado = resultado
-    print(f"Valor do primeiro dígito do CPF é {resultado}")
-#############################################################
-resultado_primeiro_digito = [resultado]
-dez_digitos = cpf[:9] + resultado_primeiro_digito
-print(dez_digitos)
-contador1 = 11
-resultado1 = 0
+# resultado = 0
+# for cadaNum in nove_digitos:
+#     print(f"{cadaNum} * {contador} = {cadaNum * contador}")
+#     resultado += cadaNum * contador
+#     contador -= 1
+# print("Soma dos resultados:", resultado)
+# resultado *= 10
+# print("Multiplicação por 10:", resultado)
+# resultado %= 11
+# print("Resto da divisão do resultado por 11:", resultado)
+# if(resultado > 9):
+#     resultado = 0
+#     print(f"Resultado é {resultado}")
+# else:
+#     resultado = resultado
+#     print(f"Valor do primeiro dígito do CPF é {resultado}")
+# #############################################################
+# resultado_primeiro_digito = [resultado]
+# dez_digitos = cpf[:9] + resultado_primeiro_digito
+# print(dez_digitos)
+# contador1 = 11
+# resultado1 = 0
 
-for cadaNum in dez_digitos:
-    print(f"{cadaNum} * {contador1} = {cadaNum * contador1}")
-    resultado1 += cadaNum * contador1
-    contador1 -= 1
-print("Soma dos resultados:", resultado1)
-resultado1 *= 10
-print("Multiplicação por 10:", resultado1)
-resultado1 %= 11
-print("Resto da divisão do resultado por 11:", resultado1)
-if(resultado1 > 9):
-    resultado1 = 0
-    print(f"Resultado é {resultado1}")
-else:
-    resultado1 = resultado1
-    print(f"Valor do segundo dígito do CPF é {resultado1}")
+# for cadaNum in dez_digitos:
+#     print(f"{cadaNum} * {contador1} = {cadaNum * contador1}")
+#     resultado1 += cadaNum * contador1
+#     contador1 -= 1
+# print("Soma dos resultados:", resultado1)
+# resultado1 *= 10
+# print("Multiplicação por 10:", resultado1)
+# resultado1 %= 11
+# print("Resto da divisão do resultado por 11:", resultado1)
+# if(resultado1 > 9):
+#     resultado1 = 0
+#     print(f"Resultado é {resultado1}")
+# else:
+#     resultado1 = resultado1
+#     print(f"Valor do segundo dígito do CPF é {resultado1}")
+
+
+#Exercício 17 - funções + *args
+def multiplica(*args):
+    total = 1
+    for num in args:
+        total *= num
+    return total
+    
+print(multiplica(1, 2, 3, 4, 5, 2, 5))
+
+def parImpar(x):
+    if(x % 2 == 0):
+        par = print(f"{x} é par.")
+        return par
+    else:
+        impar = print(f"{x} é ímpar.")
+        return impar
+    
+parImpar(8237)
