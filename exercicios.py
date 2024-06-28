@@ -292,20 +292,35 @@
 
 
 #Exercício 17 - funções + *args
-def multiplica(*args):
-    total = 1
-    for num in args:
-        total *= num
-    return total
+# def multiplica(*args):
+#     total = 1
+#     for num in args:
+#         total *= num
+#     return total
     
-print(multiplica(1, 2, 3, 4, 5, 2, 5))
+# print(multiplica(1, 2, 3, 4, 5, 2, 5))
 
-def parImpar(x):
-    if(x % 2 == 0):
-        par = print(f"{x} é par.")
-        return par
-    else:
-        impar = print(f"{x} é ímpar.")
-        return impar
+# def parImpar(x):
+#     if(x % 2 == 0):
+#         par = print(f"{x} é par.")
+#         return par
+#     else:
+#         impar = print(f"{x} é ímpar.")
+#         return impar
     
-parImpar(8237)
+# parImpar(8237)
+
+
+#Exercício 18 - funções dentro de funções (duplicar, triplicar, quadruplicar)
+def multiplicador(multiplicador):
+    def numero(numero):
+        return numero * multiplicador
+    return numero
+
+duplicar = multiplicador(2)
+triplicar = multiplicador(3)
+quadruplicar = multiplicador(4)
+
+print(duplicar(5))
+print(triplicar(5))
+print(quadruplicar(5))
