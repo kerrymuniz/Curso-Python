@@ -112,3 +112,26 @@
 # print(listaJoin)
 
 
+#Dicionários {}
+compras = {
+    'móvel' : 'sofá',
+    'iluminação' : 'leds',
+    'insumos' : [
+        {
+            'papel-higiênico' : '2 sacos',
+            'toalha' : '3 unidades',
+            'xampu' : '4 unidades'
+        }
+    ],
+    'alimentos': [{
+        'arroz' : '1 saco',
+        'feijao' : '2 sacos',
+        'carne' : '1kg' 
+    }]
+}
+
+#print(compras['insumos'])
+#print(compras['alimentos'])
+
+for indice, chave in enumerate(compras):
+    print(indice, ':', chave, '-', compras[chave])
